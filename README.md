@@ -6,6 +6,7 @@
 + 여행 후기에 초점을 맞춰서 더 생동감 있고최신 정보를 알 수 있도록 하였습니다.
 <img width="1427" alt="스크린샷 2023-07-03 오전 1 24 27" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/eb6d439b-722c-4bbd-b3e2-b0189ead9ed3">
 ------
+
 ## 2. 프로젝트 짜임
 2.1 Traveler 데이터베이스
 
