@@ -9,6 +9,7 @@
 ## 2. 프로젝트 짜임
 ### 2.1 Traveler 데이터베이스
 + 총 **10개**의 테이블과 **7개**의 시퀀스 생성 <br>
+
 <img width="260" alt="스크린샷 2023-07-10 오후 3 58 35" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/4bd89c3e-1b46-4e91-b878-dc2bf9a07703"> <br>
 <img width="260" alt="스크린샷 2023-07-10 오후 4 00 23" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/73e2f4f7-22fb-49c0-ad64-48bf50190336">
 <br>
