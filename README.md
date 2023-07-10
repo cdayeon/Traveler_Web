@@ -35,6 +35,8 @@
 + 데이터 베이스와 연결 및 SQL문 명령문
 <img width="286" alt="스크린샷 2023-07-03 오전 1 11 58" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/a13bf55b-78bf-43b5-8314-e451d491fc25">
 
-
++ JSP페이지도 각각 나누어서 관리
+<img width="359" alt="스크린샷 2023-07-03 오전 1 14 11" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/8783a0eb-3e00-480f-ae2e-83f6f3083de5">
+<br>
 
 
