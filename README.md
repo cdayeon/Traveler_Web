@@ -69,9 +69,9 @@
 
 * 로그인을 하면 header의 로그인 이미지가 **마이페이지**와 **로그아웃**이미지로 변경된다.
 
+
 ## 회원가입 페이지
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 23 37" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/5e2d4771-4fef-42fc-9be5-ded458ea096a">
-<br>
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 24 58" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/3d0cf530-f09e-4842-b74c-dbae45ee310e">
 
@@ -81,11 +81,11 @@
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 27 14" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/b90d7852-fb0a-42ab-b598-325560d04982">
 <br>
-<br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 28 36" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/2b5e2eb1-46e9-4be3-ac70-86a8c3bd1c3f">
 
 * 아이디 중복체크를 하지 않으면 회원가입이 불가하도록 제한을 두었다.
 * 중복된 아이디가 있으면 회원가입이 불가하도록 제한을 두었다.
+
 
 ## 지역 페이지
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 35 11" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/76663dfd-a9e3-4440-91dc-b05e7cb11653">
@@ -95,6 +95,7 @@
 
 * 각각의 **지역**버튼을 누르면 해당 지역을 소개하는 페이지로 이동한다.
 * 각 지역의 관광지, 행사, 맛집 정보를 보여주는 페이지이다.
+
 
 ## 여행 후기 페이지
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 44 39" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/f8db27ed-caa4-4f07-bef2-4efc415eb1a3">
@@ -106,9 +107,9 @@
 * 로그인 후 로그인하기 버튼이 **등록하기**버튼으로 변경된 것을 확인할 수 있다.
 
 <br>
-<img width="1440" alt="스크린샷 2023-07-14 오후 9 47 17" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/d5baaf40-4788-431c-af0f-5f5595f786f0">
+<img width="1440" alt="스크린샷 2023-07-14 오후 10 58 35" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/8ce9df09-3604-4f7a-8c3f-18bb3180c9e7">
 <br>
-<img width="1440" alt="스크린샷 2023-07-14 오후 9 47 42" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/7b06022c-d894-403e-93bf-cfecd17f8d5f">
+<img width="1440" alt="스크린샷 2023-07-14 오후 10 58 56" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/bc0f5e25-cdc2-4e68-b9a1-b59de44b004e">
 
 * **지역**을 선택하고 **제목, 여행 후기, 사진**을 선택한다.
 * 입력을 완료하고 **작성하기** 버튼을 누르면 여행 후기가 등록된다.
@@ -125,3 +126,33 @@
 
 * **제목**을 누르면 여행 후기의 **상세보기**가 가능하다.
 * 등록한 여러 장의 사진과 내용을 볼 수 있고, 해당 후기에 **좋아요**와 **댓글**을 남길 수 있다.
+
+
+## 여행지도 페이지
+<img width="1440" alt="스크린샷 2023-07-14 오후 10 59 59" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/8b409e9f-1bac-455a-bdd9-dd0593a9b27c">
+
+* 카카오지도 API를 활용하여 지역 맛집, 관광지를 검색하면 검색 주제와 관련된 장소들이 검색된다.
+* 예를 들어, **'홍대 맛집'**을 검색하면 홍대 내에 음식점 위치들을 마커로 표시해준다.
+
+
+## 문의사항 페이지
+<img width="1440" alt="스크린샷 2023-07-14 오후 11 04 03" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/80beb768-1dbc-4a20-8ae0-b4e6eaaa4efb">
+
+* 문의사항 페이지도 여행 후기 페이지와 마찬가지로 **로그인**을 해야만 게시글 작성이 가능하다.
+* 로그인이 되어있지 않은 상태에서 **글쓰기**버튼을 누르면 **로그인 페이지**로 이동한다.
+
+<br>
+<img width="1440" alt="스크린샷 2023-07-14 오후 11 09 14" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/0a883b24-82a1-41bc-83f4-6b537527cae5">
+
+* 문의사항에서는 **제목, 이름, 내용, 비밀번호**를 반드시 입력해야한다.
+* **등록**버튼을 누르면 게시글이 등록되면서 문의사항 페이지로 이동한다.
+* **취소**버튼을 누르면 게시글이 등록되지 않고 문의사항 페이지로 이동한다.
+
+<br>
+<img width="1440" alt="스크린샷 2023-07-14 오후 11 14 52" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/f8743a88-2248-45d1-a2b0-7b1669e96499">
+<br>
+<img width="1440" alt="스크린샷 2023-07-14 오후 11 16 47" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/5fe2783f-bba1-4ea1-91e2-25b9ef36def1">
+
+* 제목을 누르면 문의사항 **상세보기**가 가능하다.
+* 비밀번호를 입력해야만 **삭제**버튼을 눌렀을 시 삭제가 가능하다.
+* **목록**버튼을 누르면 문의사항 목록으로 다시 되돌아간다.
