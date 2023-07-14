@@ -99,30 +99,27 @@
 ## 여행 후기 페이지
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 44 39" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/f8db27ed-caa4-4f07-bef2-4efc415eb1a3">
 <br>
-<br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 46 10" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/d7e46149-7622-4880-bd2d-b9671ebf88c9">
 
 * 여행 후기 페이지는 로그인을 하지 않으면 이용할 수 없도록 제한을 두었다.
 * 로그인 후 이용이 가능하도록, **로그인하기**버튼을 통해 **로그인 페이지**로 이동한다.
 * 로그인 후 로그인하기 버튼이 **등록하기**버튼으로 변경된 것을 확인할 수 있다.
 
-
-<img width="1440" alt="스크린샷 2023-07-14 오후 9 47 17" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/d5baaf40-4788-431c-af0f-5f5595f786f0">
 <br>
+<img width="1440" alt="스크린샷 2023-07-14 오후 9 47 17" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/d5baaf40-4788-431c-af0f-5f5595f786f0">
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 47 42" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/7b06022c-d894-403e-93bf-cfecd17f8d5f">
 
 * **지역**을 선택하고 **제목, 여행 후기, 사진**을 선택한다.
 * 입력을 완료하고 **작성하기** 버튼을 누르면 여행 후기가 등록된다.
 
-
+<br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 10 22 25" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/67fc2473-d670-49f9-97ec-7b06293afee0">
 
 * 여행 후기 페이지에서 등록된 여행 후기의 **대표 이미지, 제목**이 보이는 것을 확인할 수 있다.
 
-
-<img width="1440" alt="스크린샷 2023-07-14 오후 10 38 28" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/8c618fb1-776b-4a12-bec7-887a5f55f2b7">
 <br>
+<img width="1440" alt="스크린샷 2023-07-14 오후 10 38 28" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/8c618fb1-776b-4a12-bec7-887a5f55f2b7">
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 10 40 32" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/f54ae643-61d5-468e-bad4-1131c3edb724">
 
