@@ -42,7 +42,7 @@
 
 ------
 # 3. 프로젝트 시현
-## 홈페이지
+## 3.1 홈페이지
 <img width="1427" alt="스크린샷 2023-07-10 오후 5 02 51" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/b355e791-a098-45cc-98ec-b6daf56570cb">
 
 * 즐겨차키 홈페이지로 header에는 홈페이지의 로고, 지역, 여행후기, 문의사항, 검색, 로그인이 있다.
@@ -57,7 +57,7 @@
 * 홈페이지의 하단에도 슬라이드 배너 구현했다.
 * footer에는 국내 여행사이트 SNS로 이동할 수 있도록 구현했다.
 
-## 로그인 페이지
+## 3.2 로그인 페이지
 <img width="1440" alt="스크린샷 2023-07-10 오후 5 34 14" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/96047e08-49ed-4ee2-88ba-411d867e8d79">
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 20 06" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/06617a6c-d8f6-4cca-a311-7b638090857b">
@@ -70,7 +70,7 @@
 * 로그인을 하면 header의 로그인 이미지가 **마이페이지**와 **로그아웃**이미지로 변경된다.
 
 
-## 회원가입 페이지
+## 3.3 회원가입 페이지
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 23 37" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/5e2d4771-4fef-42fc-9be5-ded458ea096a">
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 24 58" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/3d0cf530-f09e-4842-b74c-dbae45ee310e">
@@ -87,7 +87,7 @@
 * 중복된 아이디가 있으면 회원가입이 불가하도록 제한을 두었다.
 
 
-## 지역 페이지
+## 3.4 지역 페이지
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 35 11" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/76663dfd-a9e3-4440-91dc-b05e7cb11653">
 <br>
 <br>
@@ -97,7 +97,7 @@
 * 각 지역의 관광지, 행사, 맛집 정보를 보여주는 페이지이다.
 
 
-## 여행 후기 페이지
+## 3.5 여행 후기 페이지
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 44 39" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/f8db27ed-caa4-4f07-bef2-4efc415eb1a3">
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 46 10" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/d7e46149-7622-4880-bd2d-b9671ebf88c9">
@@ -128,14 +128,14 @@
 * 등록한 여러 장의 사진과 내용을 볼 수 있고, 해당 후기에 **좋아요**와 **댓글**을 남길 수 있다.
 
 
-## 여행지도 페이지
+## 3.6 여행지도 페이지
 <img width="1440" alt="스크린샷 2023-07-14 오후 10 59 59" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/8b409e9f-1bac-455a-bdd9-dd0593a9b27c">
 
 * **카카오지도 API**를 활용하여 지역 맛집, 관광지를 검색하면 검색 주제와 관련된 장소들이 검색된다.
 * 예를 들어, **홍대 맛집**을 검색하면 홍대 내에 음식점 위치들을 마커로 표시해준다.
 
 
-## 문의사항 페이지
+## 3.7 문의사항 페이지
 <img width="1440" alt="스크린샷 2023-07-14 오후 11 04 03" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/80beb768-1dbc-4a20-8ae0-b4e6eaaa4efb">
 
 * 문의사항 페이지도 여행 후기 페이지와 마찬가지로 **로그인**을 해야만 게시글 작성이 가능하다.
@@ -158,7 +158,7 @@
 * **목록**버튼을 누르면 문의사항 목록으로 다시 되돌아간다.
 
 
-## 관리자
+## 3.8 관리자
 <img width="1440" alt="스크린샷 2023-07-14 오후 11 19 08" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/3658670c-5804-4e94-b17e-895991c0b3a8">
 
 * 관리자 아이디는 **admin**으로 정하고, 회원이 해당 아이디로 회원가입을 시도할 경우 **사용할 수 없는 아이디입니다**라는 경고창이 표시된다.
@@ -175,3 +175,26 @@
 * 관리자로 로그인했을 시, 문의사항 상세보기를 하면 **답변**버튼이 나타난다.
 * 관리자만 회원의 문의사항에 답변을 등록할 수 있다.
 * 관리자가 회원의 문의사항에 답변을 등록하면, 회원의 게시글 바로 아래에 답변이 등록된 것을 확인할 수 있다.
+
+
+## 3.9 마이페이지
+<img width="1440" alt="스크린샷 2023-07-14 오후 11 28 35" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/ce3fe397-61a8-4d55-98c6-06d6af6f9bf1">
+<br>
+<img width="1440" alt="스크린샷 2023-07-14 오후 11 29 51" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/c25b54ae-31c1-41ac-be83-b75780b22478">
+<br>
+<img width="1440" alt="스크린샷 2023-07-14 오후 11 30 01" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/80999435-9951-46de-99f8-610553edc7bc">
+<br>
+<img width="1440" alt="스크린샷 2023-07-14 오후 11 30 13" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/83f788bb-a53b-42da-976c-2cf47db74801">
+<br>
+<img width="1440" alt="스크린샷 2023-07-14 오후 11 30 24" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/5757b8a4-1c52-442d-a2d3-298f26eca3df">
+<br>
+<img width="1440" alt="스크린샷 2023-07-14 오후 11 30 37" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/71498f37-7b0a-464a-ab2f-9ba849d8914a">
+
+* 회원의 마이페이지로 **회원정보수정, 회원탈퇴, 프로필 이미지 변경**이 가능하다.
+* 해당 회원이 작성한 **문의사항 게시글**과 **좋아요목록**을 확인할 수 있다.
+
+------
+# 4. 프로젝트 회고
+* 웹 사이트를 반응형으로 개발하지 않아, 화면의 해상도가 달라지면 깨지게 된다. 반응형을 적용하지 않은 점이 매우 아쉽다.
+* 문의사항에서 내용을 작성할 때, 내용의 양이 많아지면 에러가 발생한다. -> 해당 에러는 DB에서 VACHAR2의 용량을 1000으로 변경하여 에러를 해결했다.
+* 회원가입, 로그인, 회원정보수정 페이지들의 css가 아쉽다.
