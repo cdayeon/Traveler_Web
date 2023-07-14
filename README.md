@@ -59,6 +59,8 @@
 
 ### 로그인 페이지
 <img width="1440" alt="스크린샷 2023-07-10 오후 5 34 14" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/96047e08-49ed-4ee2-88ba-411d867e8d79">
+<br>
+<img width="1440" alt="스크린샷 2023-07-14 오후 9 20 06" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/06617a6c-d8f6-4cca-a311-7b638090857b">
 
 * header에서 로그인 이미지를 누르면 해당 페이지로 이동된다.
 * 아이디와 비밀번호가 비어있는 채로 로그인을 시도할 경우, 비어있지 않도록 경고창이 나타남
