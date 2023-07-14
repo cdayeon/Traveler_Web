@@ -66,18 +66,18 @@
 * 아이디와 비밀번호가 비어있는 채로 로그인을 시도할 경우, 아이디와 비밀번호를 입력해달라는 경고창이 나타난다.
 
 ### 회원가입 페이지
-<img width="1440" alt="스크린샷 2023-07-14 오후 9 20 06" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/9b2ba524-fe5b-4a7c-9687-882b02b657b5">
+<img width="1440" alt="스크린샷 2023-07-14 오후 9 23 37" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/5e2d4771-4fef-42fc-9be5-ded458ea096a">
 <br>
 <br>
-<img width="1440" alt="스크린샷 2023-07-14 오후 9 20 06" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/999413d5-53a3-432a-bf0a-3533bae47f5e">
+<img width="1440" alt="스크린샷 2023-07-14 오후 9 24 58" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/3d0cf530-f09e-4842-b74c-dbae45ee310e">
 
 * 로그인 페이지에서 **회원가입 버튼**을 누르면 회원가입 페이지로 이동한다.
 * 로그인 페이지와 마찬가지로 입력칸이 비워져있으면, 입력칸을 입력해달라는 경고창이 나타난다.
 
-<img width="1440" alt="스크린샷 2023-07-14 오후 9 20 06" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/f1c27afb-6743-45e6-b784-e35c9579fcf0">
+<img width="1440" alt="스크린샷 2023-07-14 오후 9 27 14" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/b90d7852-fb0a-42ab-b598-325560d04982">
 <br>
 <br>
-<img width="1440" alt="스크린샷 2023-07-14 오후 9 20 06" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/d9e349bb-2cad-4be9-abbd-511b4cdb429e">
+<img width="1440" alt="스크린샷 2023-07-14 오후 9 28 36" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/2b5e2eb1-46e9-4be3-ac70-86a8c3bd1c3f">
 
 * 아이디 중복체크를 하지 않으면 회원가입이 불가하도록 제한을 두었다.
 * 중복된 아이디가 있으면 회원가입이 불가하도록 제한을 두었다.
