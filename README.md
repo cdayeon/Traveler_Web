@@ -121,9 +121,6 @@
 <img width="1440" alt="스크린샷 2023-07-14 오후 10 38 28" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/8c618fb1-776b-4a12-bec7-887a5f55f2b7">
 <br>
 <br>
-<img width="1440" alt="스크린샷 2023-07-14 오후 10 22 53" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/dccec1b1-b4c7-4bbf-a989-631af035501f">
-<br>
-<br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 10 40 32" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/f54ae643-61d5-468e-bad4-1131c3edb724">
 
 * **제목**을 누르면 여행 후기의 **상세보기**가 가능하다.
