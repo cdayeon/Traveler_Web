@@ -410,7 +410,8 @@
 		}
 	/* 메인페이지 하단 슬라이드 배너 css */
 	</style>
-	
+
+	<!-- 메인페이지의 타이틀, 메인이미지, 배경색 변환 -->
 	<script type="text/javascript">
 	  var num = 1;
 	  var path = "resources/img/";
