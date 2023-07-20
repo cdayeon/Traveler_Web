@@ -322,9 +322,23 @@
 
 
 ## 3.5 여행 후기 페이지
-<img width="1440" alt="스크린샷 2023-07-14 오후 9 44 39" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/f8db27ed-caa4-4f07-bef2-4efc415eb1a3">
+```
+<!-- 등록하기 버튼 -->
+<div class="button_box">
+	<c:choose>
+		<c:when test="${empty vo.id}">
+			<input type="button" value="로그인하기" onclick="location.href='nomal_login.do'">
+		</c:when>
+		
+		<c:when test="${not empty vo.id}">
+			<input type="button" value="등록하기" onclick="location.href='review_insert_form.do'">
+		</c:when>
+	</c:choose>
+</div>
+```
+<img width="1428" alt="스크린샷 2023-07-21 오전 12 14 31" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/ab59ce33-fce8-4e5d-b6df-4937c48e7be6">
 <br>
-<img width="1440" alt="스크린샷 2023-07-14 오후 9 46 10" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/d7e46149-7622-4880-bd2d-b9671ebf88c9">
+<img width="1428" alt="스크린샷 2023-07-21 오전 12 15 11" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/a5778313-e41b-499a-82ff-2c86b20580ff">
 
 * 여행 후기 페이지는 로그인을 하지 않으면 이용할 수 없도록 제한을 두었다.
 * 로그인 후 이용이 가능하도록, **로그인하기**버튼을 통해 **로그인 페이지**로 이동한다.
