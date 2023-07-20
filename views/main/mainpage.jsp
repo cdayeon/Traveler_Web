@@ -249,6 +249,7 @@
 			font-style: normal;
 			color: #FF6C6C;
 		}
+		/* 메인페이지 하단 슬라이드 배너 css */
 		.slide {
 		  /* layout */
 		  display: flex;
@@ -407,6 +408,7 @@
 		   flex-shrink: 0;
 		   transition: left 0.15s;
 		}
+	/* 메인페이지 하단 슬라이드 배너 css */
 	</style>
 	
 	<script type="text/javascript">
