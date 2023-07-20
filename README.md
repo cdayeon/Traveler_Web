@@ -2,8 +2,8 @@
 ### Team project : 김요나, 김한결, 성진영, 정찬식, 천다연
 ### 사용한 기술 스택 : Java, html, css, js
 # 1. 주제 선정 이유
-* 코로나 종식으로 사람들이 대부분 해외로 여행을 가는 상황이 아쉬워 국내에 숨겨진 여행지를 소개하는 목적으로 만들게 되었다.
-* 기존의 여행사이트를 모티브로 하여 국내 여행지 소개를 하되, 여행자들이 여행 후기를 작성하여 공유를 목적으로 하는 여행사이트를 개발하였다.
+* 코로나 종식으로 사람들이 대부분 해외로 여행을 가는 상황이 아쉬워 **국내에 숨겨진 여행지를 소개**하는 목적으로 만들게 되었다.
+* 기존의 여행사이트를 모티브로 하여 국내 여행지 소개를 하되, **여행자들이 여행 후기를 작성하여 공유를 목적으로 하는 여행사이트를 개발**하였다.
 * 여행 후기에 초점을 맞춰서 더 생동감있고 최신 정보를 알 수 있도록 하였다.
 ------
 # 2. 프로젝트 짜임
@@ -45,10 +45,11 @@
 ## 3.1 홈페이지
 <img width="1427" alt="스크린샷 2023-07-10 오후 5 02 51" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/b355e791-a098-45cc-98ec-b6daf56570cb">
 
-* 즐겨차키 홈페이지로 header에는 홈페이지의 로고, 지역, 여행후기, 문의사항, 검색, 로그인이 있다.
-* 로고와 '홈'을 누르면 해당 홈페이지로 이동한다.
-* '지역', '여행후기', '문의사항'을 누르면 각각의 페이지로 이동한다.
-* 로그인 이모티콘을 누르면 로그인 페이지로 이동한다.
+* 즐겨차키 메인페이지로 header에는 홈페이지의 **로고, 지역, 여행후기, 문의사항, 검색, 로그인**이 있다.
+* 다른 페이지들에서 **로고와 홈**을 누르면 메인페이지로 이동한다.
+* **지역, 여행후기, 문의사항**을 누르면 각각의 페이지로 이동한다.
+* 로그인 이미지를 누르면 로그인 페이지로 이동한다.
+* 메인페이지의 **이미지와 <U>자세히보기</U>**를 누르면 해당 정보를 가진 **여행페이지 구석구석**으로 이동한다.
 
 ```
 <head>
@@ -76,11 +77,67 @@
 </body>
 ```
 * 검색란에 **지역**을 검색하면 해당 지역의 여행 정보를 가지고 있는 **지역 페이지로 이동**
+ 
+```
+<script type="text/javascript">
+	  var num = 1;
+	  var path = "resources/img/";
+	
+	  // 5초마다 배경색, 타이틀, 이미지 변경
+	  setInterval(next, 5000);
+	
+	  function prev() {
+	    num--;
+	    if (num < 1) {
+	      num = 7;
+	    }
+	    changeSlide();
+	  }
+	
+	  function next() {
+	    num++;
+	    if (num > 7) {
+	      num = 1;
+	    }
+	    changeSlide();
+	  }
+	
+	  function changeSlide() {
+	    var main_img = document.getElementById("main_img");
+	    var main_num = document.getElementById("main" + num);
+	    var page_num = document.getElementById("page_num");
+	    var container = document.getElementById("container");
+	
+	    // 모든 슬라이드 요소를 숨김 처리
+	    var slideElements = document.querySelectorAll("#container > div");
+	    slideElements.forEach(function(element) {
+	      element.style.display = "none";
+	    });
+	
+	    // 현재 슬라이드를 표시
+	    main_num.style.display = "";
+	    main_img.src = path + num + ".jpg";
+	
+	    // 배경색과 페이지 번호 업데이트
+	    var backgroundColors = [
+	      "rgb(243, 250, 203)",
+	      "rgb(217, 253, 255)",
+	      "rgb(252, 243, 224)",
+	      "rgb(255, 231, 211)",
+	      "rgb(252, 223, 238)",
+	      "rgb(255, 219, 228)",
+	      "rgb(192, 228, 255)"
+	    ];
+	    container.style.backgroundColor = backgroundColors[num - 1];
+	    page_num.innerHTML = num;
+	  }
+	</script>
+```
 * 홈페이지의 메인 타이틀과 이미지, 배경색은 일정 시간마다 변경되도록 구현했다.
 <br>
 <img width="1427" alt="스크린샷 2023-07-10 오후 5 10 00" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/9a144a3c-f4fe-4ad1-bbcf-8da83ef69414">
 
-* 홈페이지의 하단에도 슬라이드 배너 구현했다.
+* 홈페이지의 하단에도 슬라이드 배너 구현했다. (js/slide.js와 views/main/mainpage.jsp파일의 css 참고바람.)
 * footer에는 국내 여행사이트 SNS로 이동할 수 있도록 구현했다.
 
 ## 3.2 로그인 페이지
