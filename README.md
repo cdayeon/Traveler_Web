@@ -49,7 +49,7 @@
 * 다른 페이지들에서 **로고와 홈**을 누르면 메인페이지로 이동한다.
 * **지역, 여행후기, 문의사항**을 누르면 각각의 페이지로 이동한다.
 * 로그인 이미지를 누르면 로그인 페이지로 이동한다.
-* 메인페이지의 **이미지와 <U>자세히보기</U>**를 누르면 해당 정보를 가진 **여행페이지 구석구석**으로 이동한다.
+* 메인페이지의 <U>이미지와 자세히보기</U>를 누르면 해당 정보를 가진 **여행페이지 구석구석**으로 이동한다.
 
 ```
 <head>
@@ -131,7 +131,7 @@
 	    container.style.backgroundColor = backgroundColors[num - 1];
 	    page_num.innerHTML = num;
 	  }
-	</script>
+</script>
 ```
 * 홈페이지의 메인 타이틀과 이미지, 배경색은 일정 시간마다 변경되도록 구현했다.
 <br>
@@ -199,18 +199,115 @@
 
 
 ## 3.3 회원가입 페이지
-<img width="1440" alt="스크린샷 2023-07-14 오후 9 23 37" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/5e2d4771-4fef-42fc-9be5-ded458ea096a">
+```
+<script type="text/javascript">
+	//중복체크 확인용
+	var id_check=false;
+	//관리자 확인용
+	var admin = "admin";
+	function check() {
+		//중복체크
+		var id = document.getElementById("id").value.trim();
+		if(id == 'admin') { //admin아이디는 관리자만 사용할 수 있도록 제한
+			alert('사용할 수 없는 아이디 입니다.');
+			return;
+		}
+		if(id==''){
+			alert('아이디를 입력해주세요.');
+			return;
+		}
+			var url = "id_check.do";
+			var param= "id="+encodeURIComponent(id);
+			
+			sendRequest(url,param,C_id,"POST");	
+	}
+			
+	function C_id() {
+		if(xhr.readyState==4&&xhr.status==200){
+		
+			var data = xhr.responseText;
+			var json = (new Function('return'+data))();
+			
+			if(json[0].res=='no'){
+				alert('이미 사용중인 아이디입니다.');
+				return;
+			}else{
+				alert('사용 가능한 아이디 입니다.');
+				id_check=true;
+			}
+		}
+	}
+			
+	function recheck() {
+		id_check=false;
+	}
+			
+	function insert(f) {
+		
+		var id =f.id.value.trim();
+		var pw =f.pw.value.trim();
+		var c_pw =f.c_pw.value.trim();
+		var name =f.name.value.trim();
+		var email =f.email.value.trim();
+		var tel =f.tel.value.trim();
+		var birth =f.birth.value.trim();
+
+		//회원가입 유효성 검사
+		if(id==''){
+			alert('아이디를 입력해주세요.');
+			return;
+		}
+		
+		if(!id_check){
+			alert('아이디 중복여부를 확인해주세요!')
+			return;
+		}
+		
+		if(pw==''){
+			alert('비밀번호를 입력해주세요');
+			return;
+		}
+		if(c_pw == '') {
+			alert('비밀번호를 확인해주세요');
+			return;
+		}
+		if(c_pw!=pw){
+			alert('비밀번호가 다릅니다!');
+			return;
+		}
+		if(name==''){
+			alert('이름을 입력해주세요.')
+			return;
+		}
+		if(email==''){
+			alert('이메일을 입력해주세요.')
+			return;
+		}
+		if(tel==''){
+			alert('전화번호를 입력해주세요.')
+			return;
+		}
+		if(birth==''){
+			alert('생년월일을 입력해주세요(6자 혹은 8자)')
+			return;
+		}
+		
+		f.method="POST";
+		f.action="insert.do"
+		f.submit();
+		
+	}
+</script>
+```
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 24 58" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/3d0cf530-f09e-4842-b74c-dbae45ee310e">
-
-* 로그인 페이지에서 **회원가입 버튼**을 누르면 회원가입 페이지로 이동한다.
-* 로그인 페이지와 마찬가지로 입력칸이 비워져있으면, 입력칸을 입력해달라는 경고창이 나타난다.
-
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 27 14" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/b90d7852-fb0a-42ab-b598-325560d04982">
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 28 36" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/2b5e2eb1-46e9-4be3-ac70-86a8c3bd1c3f">
 
+* 로그인 페이지에서 **회원가입 버튼**을 누르면 회원가입 페이지로 이동한다.
+* 로그인 페이지와 마찬가지로 입력칸이 비워져있으면, 입력칸을 입력해달라는 경고창이 나타난다.
 * 아이디 중복체크를 하지 않으면 회원가입이 불가하도록 제한을 두었다.
 * 중복된 아이디가 있으면 회원가입이 불가하도록 제한을 두었다.
 
