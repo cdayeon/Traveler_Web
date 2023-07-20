@@ -173,6 +173,7 @@
 ```
 <div class="header-mypage">
     <c:choose>
+	<!-- 로그인이 되어있을 경우, 마이페이지 이미지가 보이도록 설정 -->
        <c:when test="${not empty vo}">
 	  <img id="mypage-img" alt="마이 페이지" src="resources/img/user.png" onclick="location.href='mypage.do'">
        </c:when>   
@@ -180,16 +181,19 @@
 </div>
 <div class="header-btn">
 	<c:choose>
+		<!-- 로그인이 되어있지 않을 경우, 로그인 이미지가 보이도록 설정 -->
 		<c:when test="${empty vo}">
 			<img class="header-log" src="resources/img/login2.jpg" alt="로그인" align="right" onclick="location.href='nomal_login.do'">
 		</c:when>
+		<!-- 로그인이 되어있을 경우, 로그아웃 이미지가 보이도록 설정 -->
 		<c:when test="${not empty vo}">
 			<img class="header-log" src="resources/img/logout2.jpg" alt="로그아웃" align="right" onclick="location.href='logout.do'">
 		</c:when>
 	</c:choose>	
 </div>
 ```
-<img width="1440" alt="스크린샷 2023-07-14 오후 9 39 38" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/216be069-5624-4f6f-a579-017882eef281">
+<img width="1428" alt="스크린샷 2023-07-20 오후 11 55 18" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/f89d91e2-2e3a-4d28-bc48-7d5c9db7fcb8">
+
 
 * 로그인을 하면 header의 로그인 이미지가 **마이페이지**와 **로그아웃**이미지로 변경된다.
 
