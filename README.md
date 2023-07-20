@@ -48,8 +48,34 @@
 * 즐겨차키 홈페이지로 header에는 홈페이지의 로고, 지역, 여행후기, 문의사항, 검색, 로그인이 있다.
 * 로고와 '홈'을 누르면 해당 홈페이지로 이동한다.
 * '지역', '여행후기', '문의사항'을 누르면 각각의 페이지로 이동한다.
-* 검색에 서울, 인천, 부산 등등 '지역'을 검색하면 지역 페이지의 해당 지역으로 이동한다.
 * 로그인 이모티콘을 누르면 로그인 페이지로 이동한다.
+
+```
+<head>
+  <script type="text/javascript">
+      function search(){
+         var region = document.getElementById("search-region").value;
+         var searchInput = document.getElementById('search-region');
+         var searchImg = document.getElementById('search-img');
+         
+         if (searchInput.value.trim() == '') {
+               alert('텍스트가 비어있습니다. 지역이름을 입력해주세요.'); // 텍스트가 비어있는 상태에서 돋보기 버튼을 누르면 alert을 띄우도록 설정
+               return;
+             } else {
+               // 검색 페이지로 이동하는 로직
+             location.href="area_info_result.do?a_region="+region;
+             }
+      }
+  </script>
+</head>
+<body>
+  <div>
+    <input id="search-region" class="search-input" type="text" placeholder="어디로 어떤 여행을 떠날 건가요?">
+    <img id="search-img" src="resources/img/search2.jpg" onclick="search()">
+  </div>
+</body>
+```
+* 검색란에 **지역**을 검색하면 해당 지역의 여행 정보를 가지고 있는 **지역 페이지로 이동**
 * 홈페이지의 메인 타이틀과 이미지, 배경색은 일정 시간마다 변경되도록 구현했다.
 <br>
 <img width="1427" alt="스크린샷 2023-07-10 오후 5 10 00" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/9a144a3c-f4fe-4ad1-bbcf-8da83ef69414">
