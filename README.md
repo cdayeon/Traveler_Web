@@ -141,13 +141,54 @@
 * footer에는 국내 여행사이트 SNS로 이동할 수 있도록 구현했다.
 
 ## 3.2 로그인 페이지
-<img width="1440" alt="스크린샷 2023-07-10 오후 5 34 14" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/96047e08-49ed-4ee2-88ba-411d867e8d79">
+```
+<script>
+	//ID/비밀번호 유효성 검사
+	function userlogin(f) {
+		var id = f.id.value.trim();
+		var pw = f.pw.value.trim();
+		
+		if(id==''){
+			alert('아이디를 입력해주세요.');
+			return;
+		}
+		if(pw==''){
+			alert('비밀번호를 입력해주세요.');
+			return;
+		}
+		
+		var url ='userlogin.do';
+		var param="id="+id + "&pw="+pw;
+		
+		sendRequest(url,param,C_login,"POST");
+	}
+</script>
+```
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 20 06" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/06617a6c-d8f6-4cca-a311-7b638090857b">
 
-* header에서 로그인 이미지를 누르면 로그인 페이지로 이동한다.
+* 메인페이지의 header에서 로그인 이미지를 누르면 로그인 페이지로 이동한다.
 * 아이디와 비밀번호가 비어있는 채로 로그인을 시도할 경우, 아이디와 비밀번호를 입력해달라는 경고창이 나타난다.
 
+```
+<div class="header-mypage">
+    <c:choose>
+       <c:when test="${not empty vo}">
+	  <img id="mypage-img" alt="마이 페이지" src="resources/img/user.png" onclick="location.href='mypage.do'">
+       </c:when>   
+    </c:choose>
+</div>
+<div class="header-btn">
+	<c:choose>
+		<c:when test="${empty vo}">
+			<img class="header-log" src="resources/img/login2.jpg" alt="로그인" align="right" onclick="location.href='nomal_login.do'">
+		</c:when>
+		<c:when test="${not empty vo}">
+			<img class="header-log" src="resources/img/logout2.jpg" alt="로그아웃" align="right" onclick="location.href='logout.do'">
+		</c:when>
+	</c:choose>	
+</div>
+```
 <img width="1440" alt="스크린샷 2023-07-14 오후 9 39 38" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/216be069-5624-4f6f-a579-017882eef281">
 
 * 로그인을 하면 header의 로그인 이미지가 **마이페이지**와 **로그아웃**이미지로 변경된다.
