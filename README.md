@@ -29,8 +29,8 @@
 ## 2.2 Spring Framework
 <img width="274" alt="스크린샷 2023-07-03 오전 1 11 17" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/0a00d5b3-35ef-4bea-b7ee-19b246537067">
 
-* Controller, DAO, VO를 각각의 패키지에 나누어서 관리했다.
-* util패키지는 페이징 처리를 관리하는 패키지이다.
+* **Controller, DAO, VO**를 각각의 패키지에 나누어서 관리했다.
+* **util패키지**는 **페이징 처리를 관리**하는 패키지이다.
 <br>
 <img width="286" alt="스크린샷 2023-07-03 오전 1 11 58" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/a13bf55b-78bf-43b5-8314-e451d491fc25">
 
