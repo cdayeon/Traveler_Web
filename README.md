@@ -138,7 +138,7 @@
 <br>
 <img width="1427" alt="스크린샷 2023-07-10 오후 5 10 00" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/9a144a3c-f4fe-4ad1-bbcf-8da83ef69414">
 
-* 홈페이지의 하단에도 슬라이드 배너 구현했다. (js/slide.js와 views/main/mainpage.jsp파일의 css 참고바람.)
+* 홈페이지의 하단에도 슬라이드 배너 구현했다. **(js/slide.js와 views/main/mainpage.jsp파일의 css 참고바람.)**
 * footer에는 국내 여행사이트 SNS로 이동할 수 있도록 구현했다.
 
 ## 3.2 로그인 페이지
