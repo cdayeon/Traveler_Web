@@ -337,9 +337,9 @@
 	</c:choose>
 </div>
 ```
-<img width="1428" alt="스크린샷 2023-07-21 오전 12 14 31" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/ab59ce33-fce8-4e5d-b6df-4937c48e7be6">
+<img width="1428" alt="스크린샷 2023-07-25 오후 12 53 45" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/84d489c4-e68c-46d6-8788-21924c81855a">
 <br>
-<img width="1428" alt="스크린샷 2023-07-21 오전 12 15 11" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/a5778313-e41b-499a-82ff-2c86b20580ff">
+<img width="1428" alt="스크린샷 2023-07-25 오후 12 54 23" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/7dd89743-d2d9-4006-a368-2d4b8a7e5f7a">
 
 * 여행 후기 페이지는 로그인을 하지 않으면 이용할 수 없도록 제한을 두었다.
 * 로그인 후 이용이 가능하도록, **로그인하기**버튼을 통해 **로그인 페이지**로 이동한다.
