@@ -359,9 +359,9 @@
 * 여행 후기 페이지에서 등록된 여행 후기의 **대표 이미지, 제목**이 보이는 것을 확인할 수 있다.
 
 <br>
-<img width="1440" alt="스크린샷 2023-07-14 오후 10 38 28" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/8c618fb1-776b-4a12-bec7-887a5f55f2b7">
+<img width="1428" alt="스크린샷 2023-07-25 오후 12 49 52" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/e8572c4b-a95b-4c89-a957-de9dde07fcff">
 <br>
-<img width="1440" alt="스크린샷 2023-07-14 오후 10 40 32" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/f54ae643-61d5-468e-bad4-1131c3edb724">
+<img width="1428" alt="스크린샷 2023-07-25 오후 12 50 23" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/887255b8-a96c-477f-b698-51805d30f0ec">
 
 * **제목**을 누르면 여행 후기의 **상세보기**가 가능하다.
 * 등록한 여러 장의 사진과 내용을 볼 수 있고, 해당 후기에 **좋아요**와 **댓글**을 남길 수 있다.
