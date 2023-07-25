@@ -615,7 +615,6 @@ function removeAllChildNods(el) {
 * 문의사항 페이지도 여행 후기 페이지와 마찬가지로 **로그인**을 해야만 게시글 작성이 가능하다.
 * 로그인이 되어있지 않은 상태에서 **글쓰기**버튼을 누르면 **로그인 페이지**로 이동한다.
 
-<br>
 ```
 <script>
 	function send_check(f) {
@@ -654,7 +653,6 @@ function removeAllChildNods(el) {
 * **등록**버튼을 누르면 게시글이 등록되면서 문의사항 페이지로 이동한다.
 * **취소**버튼을 누르면 게시글이 등록되지 않고 문의사항 페이지로 이동한다.
 
-<br>
 ```
 <!-- 제목을 입력하면 문의사항 상세보기 페이지로 이동하도록 구현 -->
 <a id="list_a" href="q_view.do?qna_idx=${qvo.qna_idx}&page=${param.page}">
