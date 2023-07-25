@@ -595,19 +595,72 @@ function removeAllChildNods(el) {
 
 
 ## 3.7 문의사항 페이지
+```
+<script>
+	function q_insert_form() {
+		
+		var list_id = document.getElementById("id").value;
+		
+		// 로그인이 되어있지 않다면 로그인 화면으로
+		if(list_id == ''){
+			location.href = "nomal_login.do";
+		} else { // 로그인이 되어 있다면 글쓰기 폼으로 이동
+			location.href = "q_insert_form.do";
+		}
+	 }
+</script>
+```
 <img width="1440" alt="스크린샷 2023-07-14 오후 11 04 03" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/80beb768-1dbc-4a20-8ae0-b4e6eaaa4efb">
 
 * 문의사항 페이지도 여행 후기 페이지와 마찬가지로 **로그인**을 해야만 게시글 작성이 가능하다.
 * 로그인이 되어있지 않은 상태에서 **글쓰기**버튼을 누르면 **로그인 페이지**로 이동한다.
 
 <br>
+```
+<script>
+	function send_check(f) {
+		var subject = f.subject.value.trim();
+		var name = f.name.value.trim();
+		var content = f.content.value.trim();
+		var pwd = f.pwd.value.trim();
+		
+		//유효성 검사
+		if(subject == '') {
+			alert('제목을 입력해주세요');
+			return;
+		}
+		if(name == '') {
+			alert('이름을 입력해주세요');
+			return;
+		}
+		if(content == '') {
+			alert('내용을 입력해주세요');
+			return;
+		}
+		if(pwd == '') {
+			alert('비밀번호를 입력해주세요');
+			return;
+		}
+		
+		f.method = "POST";
+		f.action = "q_insert.do";
+		f.submit();
+	}
+</script>
+```
 <img width="1440" alt="스크린샷 2023-07-14 오후 11 09 14" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/0a883b24-82a1-41bc-83f4-6b537527cae5">
 
-* 문의사항에서는 **제목, 이름, 내용, 비밀번호**를 반드시 입력해야한다.
+* 문의사항에서는 **제목, 이름, 내용, 비밀번호**를 반드시 입력하도록 하였다.
 * **등록**버튼을 누르면 게시글이 등록되면서 문의사항 페이지로 이동한다.
 * **취소**버튼을 누르면 게시글이 등록되지 않고 문의사항 페이지로 이동한다.
 
 <br>
+```
+<!-- 제목을 입력하면 문의사항 상세보기 페이지로 이동하도록 구현 -->
+<a id="list_a" href="q_view.do?qna_idx=${qvo.qna_idx}&page=${param.page}">
+	<font color="black">${qvo.subject}</font>
+</a>
+```
 <img width="1440" alt="스크린샷 2023-07-14 오후 11 14 52" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/f8743a88-2248-45d1-a2b0-7b1669e96499">
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 11 16 47" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/5fe2783f-bba1-4ea1-91e2-25b9ef36def1">
@@ -618,6 +671,20 @@ function removeAllChildNods(el) {
 
 
 ## 3.8 관리자
+```
+<script type="text/javascript">
+	//관리자 확인용
+	var admin = "admin";
+	function check() {
+		//중복체크
+		var id = document.getElementById("id").value.trim();
+		if(id == 'admin') { //admin아이디는 관리자만 사용할 수 있도록 제한
+			alert('사용할 수 없는 아이디 입니다.');
+			return;
+		}
+	}
+</script>
+```
 <img width="1440" alt="스크린샷 2023-07-14 오후 11 19 08" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/3658670c-5804-4e94-b17e-895991c0b3a8">
 
 * 관리자 아이디는 **admin**으로 정하고, 회원이 해당 아이디로 회원가입을 시도할 경우 **사용할 수 없는 아이디입니다**라는 경고창이 표시된다.
@@ -625,6 +692,12 @@ function removeAllChildNods(el) {
 * 관리자의 역할은 **게시글 답변 제공**이다.
 
 <br>
+```
+<!-- depth가 1보다 크면 답변 달지 못하도록 하기 & 관리자만 답변 버튼 보이게 하기 -->
+<c:if test="${qvo.qna_depth lt 1 && vo.id eq 'admin'}">
+	<input id="view_btn2" type="button" value="답변" onclick="reply()">
+</c:if>
+```
 <img width="1440" alt="스크린샷 2023-07-14 오후 11 22 59" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/85d8ce30-346e-4084-bfbb-5880495b842e">
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 11 24 05" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/4a1bfcb9-a197-4b4a-b407-2b200896c19c">
