@@ -689,7 +689,6 @@ function removeAllChildNods(el) {
 * 관리자로 로그인 했을 시 **관리자입니다**라는 안내문구가 표시된다.
 * 관리자의 역할은 **게시글 답변 제공**이다.
 
-<br>
 ```
 <!-- depth가 1보다 크면 답변 달지 못하도록 하기 & 관리자만 답변 버튼 보이게 하기 -->
 <c:if test="${qvo.qna_depth lt 1 && vo.id eq 'admin'}">
