@@ -707,7 +707,7 @@ function removeAllChildNods(el) {
 
 
 ## 3.9 마이페이지
-<img width="1440" alt="스크린샷 2023-07-14 오후 11 28 35" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/ce3fe397-61a8-4d55-98c6-06d6af6f9bf1">
+<img width="1428" alt="스크린샷 2023-07-25 오후 1 17 24" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/ce1eab3a-37eb-4ef7-a32b-d437a9e0267e">
 <br>
 <img width="1440" alt="스크린샷 2023-07-14 오후 11 29 51" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/c25b54ae-31c1-41ac-be83-b75780b22478">
 <br>
