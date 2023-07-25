@@ -695,11 +695,11 @@ function removeAllChildNods(el) {
 	<input id="view_btn2" type="button" value="답변" onclick="reply()">
 </c:if>
 ```
-<img width="1440" alt="스크린샷 2023-07-14 오후 11 22 59" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/85d8ce30-346e-4084-bfbb-5880495b842e">
+<img width="1428" alt="스크린샷 2023-07-25 오후 12 57 45" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/70766072-7b81-4f83-bb46-b17f42141afa">
 <br>
-<img width="1440" alt="스크린샷 2023-07-14 오후 11 24 05" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/4a1bfcb9-a197-4b4a-b407-2b200896c19c">
+<img width="1428" alt="스크린샷 2023-07-25 오후 1 10 46" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/5da64668-b01d-4a96-ad22-a3b377fcb08e">
 <br>
-<img width="1440" alt="스크린샷 2023-07-14 오후 11 24 17" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/b6cc291c-effb-429e-90c4-d0b361795802">
+<img width="1428" alt="스크린샷 2023-07-25 오후 1 10 56" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/ff69da97-18d2-4b45-a4f0-ee5b4c7d7b88">
 
 * 관리자로 로그인했을 시, 문의사항 상세보기를 하면 **답변**버튼이 나타난다.
 * 관리자만 회원의 문의사항에 답변을 등록할 수 있다.
