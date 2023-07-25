@@ -610,7 +610,7 @@ function removeAllChildNods(el) {
 	 }
 </script>
 ```
-<img width="1440" alt="스크린샷 2023-07-14 오후 11 04 03" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/80beb768-1dbc-4a20-8ae0-b4e6eaaa4efb">
+<img width="1428" alt="스크린샷 2023-07-25 오후 1 07 15" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/bc565a3f-c348-4895-92c1-8152eeca1a87">
 
 * 문의사항 페이지도 여행 후기 페이지와 마찬가지로 **로그인**을 해야만 게시글 작성이 가능하다.
 * 로그인이 되어있지 않은 상태에서 **글쓰기**버튼을 누르면 **로그인 페이지**로 이동한다.
