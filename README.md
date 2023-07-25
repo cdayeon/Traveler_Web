@@ -647,7 +647,7 @@ function removeAllChildNods(el) {
 	}
 </script>
 ```
-<img width="1440" alt="스크린샷 2023-07-14 오후 11 09 14" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/0a883b24-82a1-41bc-83f4-6b537527cae5">
+<img width="1428" alt="스크린샷 2023-07-25 오후 1 08 05" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/a96c2132-461e-4207-b860-f72a79c2890c">
 
 * 문의사항에서는 **제목, 이름, 내용, 비밀번호**를 반드시 입력하도록 하였다.
 * **등록**버튼을 누르면 게시글이 등록되면서 문의사항 페이지로 이동한다.
@@ -659,9 +659,9 @@ function removeAllChildNods(el) {
 	<font color="black">${qvo.subject}</font>
 </a>
 ```
-<img width="1440" alt="스크린샷 2023-07-14 오후 11 14 52" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/f8743a88-2248-45d1-a2b0-7b1669e96499">
+<img width="1428" alt="스크린샷 2023-07-25 오후 1 08 24" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/7ea939ee-ffed-4b74-b702-10c195e0731b">
 <br>
-<img width="1440" alt="스크린샷 2023-07-14 오후 11 16 47" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/5fe2783f-bba1-4ea1-91e2-25b9ef36def1">
+<img width="1428" alt="스크린샷 2023-07-25 오후 1 08 38" src="https://github.com/cdayeon/Traveler_Web/assets/119835857/026224e5-4c04-44bc-9c3d-97d7aee564cd">
 
 * 제목을 누르면 문의사항 **상세보기**가 가능하다.
 * 비밀번호를 입력해야만 **삭제**버튼을 눌렀을 시 삭제가 가능하다.
